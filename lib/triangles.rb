@@ -10,11 +10,11 @@ class Triangle
       false
     else
       if (@side1 == @side2) && (@side2 == @side3) && (@side3 == @side1)
-        true
+        "equalateral"
       elsif (@side1 == @side2) || (@side2 == @side3) || (@side1 == @side3)
-        true
+        "isosceles"
       elsif (@side1 != @side2) || (@side2 != @side3) || (@side1 != @side3)
-        true
+        "scalene"
       end
     end
   end
